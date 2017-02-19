@@ -57,6 +57,14 @@
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
+    <Page Include="Controls\Button.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="SingleValue.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
     <Page Include="ShapeBrush.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
@@ -75,6 +83,21 @@
   </ItemGroup>
   <ItemGroup>
     <Resource Include="Images\Logo.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\daiding.png" />
+    <Resource Include="Images\ershoufang.png" />
+    <Resource Include="Images\fangdaijisuanqi.png" />
+    <Resource Include="Images\huodong.png" />
+    <Resource Include="Images\jiazheng.png" />
+    <Resource Include="Images\jinrong.png" />
+    <Resource Include="Images\laba.png" />
+    <Resource Include="Images\logo1.png" />
+    <Resource Include="Images\lvyou.png" />
+    <Resource Include="Images\menpiao.png" />
+    <Resource Include="Images\xinfang.png" />
+    <Resource Include="Images\zhuangxiu.png" />
+    <Resource Include="Images\zufang.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

@@ -7,13 +7,26 @@
                          mc:Ignorable="d"
                          d:DesignHeight="300"
                          d:DesignWidth="300"
+                         Height="25"
                          xmlns:House="clr-namespace:House.Utility;assembly=House.Utility">
     <UserControl.DataContext>
         <Binding Path="HeaderNewsViewModel"
                  Source="{StaticResource ResourceKey=Locator}"></Binding>
     </UserControl.DataContext>
-    <Grid Background="{DynamicResource AccentColorBrush2}">
-        <TextBlock Text=" 公告，沈阳楼盘大减价"></TextBlock>
-
+    <Grid Background="{DynamicResource HouseAccentColorBrush5}">
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="25"></ColumnDefinition>
+            <ColumnDefinition Width="*"></ColumnDefinition>
+        </Grid.ColumnDefinitions>
+        <Grid   Grid.Column="0"
+                Width="18"
+                Height="18"
+                Margin="5 0 0 0"
+                Background="{DynamicResource SpeakerBrush}"></Grid>
+        <TextBlock VerticalAlignment="Center"
+                   Foreground="White"
+                   FontSize="15"
+                   Grid.Column="1"
+                   Text=" 公告，沈阳楼盘大减价"></TextBlock>
     </Grid>
 </House:MyUserControlBase>

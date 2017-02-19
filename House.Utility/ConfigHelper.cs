@@ -41,10 +41,7 @@ namespace House.Utility
         public static string GetAppSetting(string key)
         {
             return ConfigurationManager.AppSettings[key].GetString();
-            //return ConfigurationManager.AppSettings.Get(key);
-
         }
 
     }
-
 }

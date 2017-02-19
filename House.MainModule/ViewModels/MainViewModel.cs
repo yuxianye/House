@@ -185,7 +185,7 @@ namespace House.MainModule.ViewModels
                     //singleWindows.Show();
                     //singleWindows.Focus();
                     NewHouse.Views.NewHouseView newHouseView = new NewHouse.Views.NewHouseView();
-                    newHouseView.ShowDialog();
+                    newHouseView.Show();
                     break;
             }
         }

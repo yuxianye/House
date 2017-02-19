@@ -11,6 +11,8 @@
 
         <ResourceDictionary Source="pack://application:,,,/House.Thems;component/ColorBrush.xaml" />
         <ResourceDictionary Source="pack://application:,,,/House.Thems;component/ShapeBrush.xaml" />
+        <ResourceDictionary Source="pack://application:,,,/House.Thems;component/Controls/Button.xaml" />
+        <ResourceDictionary Source="pack://application:,,,/House.Thems;component/SingleValue.xaml" />
 
     </ResourceDictionary.MergedDictionaries>
 </ResourceDictionary>

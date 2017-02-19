@@ -13,9 +13,9 @@
                       TitleCaps="True"
                       MinHeight="720"
                       MaxHeight="720"
-                      Width="250"
-                      MinWidth="250"
-                      MaxWidth="250"
+                      Width="240"
+                      MinWidth="240"
+                      MaxWidth="240"
                       WindowTitleBrush="{DynamicResource AccentColorBrush}"
                       TitleCharacterCasing="Normal"
                       ShowMaxRestoreButton="True"
@@ -23,7 +23,7 @@
                       xmlns:Views="clr-namespace:House.MainModule.Views;assembly=House.MainModule"
                       Icon="pack://application:,,,/House.Thems;component/Images/Logo.ico"
                       ShowIconOnTitleBar="False">
-    <Grid>
+    <Grid >
         <Views:MainView></Views:MainView>
     </Grid>
 </controls:MetroWindow>

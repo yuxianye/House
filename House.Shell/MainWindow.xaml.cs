@@ -24,12 +24,15 @@ namespace House.Shell
         {
             verifyUser();
             InitializeComponent();
-
         }
 
+        /// <summary>
+        /// 验证用户是否登录成功
+        /// </summary>
         private void verifyUser()
         {
             House.Login.Views.LoginView loginWindows = new LoginView();
+            //登陆没有返回true,关闭了窗体，结束应用程序
             if (!loginWindows.ShowDialog() == true)
             {
                 Application.Current.Shutdown();
