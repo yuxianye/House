@@ -8,7 +8,7 @@
                          d:DesignHeight="300"
                          d:DesignWidth="300"
                          xmlns:House="clr-namespace:House.Utility;assembly=House.Utility"
-                         xmlns:header="clr-namespace:House.Header.Views;assembly=House.Header"
+                         xmlns:userInfo="clr-namespace:House.UserInfo.Views;assembly=House.Header"
                          xmlns:headerNews="clr-namespace:House.HeaderNews.Views;assembly=House.HeaderNews"
                          xmlns:mainMenu="clr-namespace:House.MainMenu.Views;assembly=House.MainMenu"
                          xmlns:footer="clr-namespace:House.Footer.Views;assembly=House.Footer">
@@ -24,14 +24,14 @@
             <RowDefinition Height="*"></RowDefinition>
             <RowDefinition Height="auto"></RowDefinition>
         </Grid.RowDefinitions>
-        <header:HeaderView   Grid.Row="0"
-                             DataContext="{Binding HeaderViewModel}">
-        </header:HeaderView>
+        <userInfo:UserInfoView   Grid.Row="0"
+                                 DataContext="{Binding UserInfoViewModel}">
+        </userInfo:UserInfoView>
 
         <headerNews:HeaderNewsView Grid.Row="1"
                                    DataContext="{Binding HeaderNewsViewModel}">
         </headerNews:HeaderNewsView>
-       
+
         <mainMenu:MainMenuView  Grid.Row="2"
                                 DataContext="{Binding MainMenuViewModel}">
         </mainMenu:MainMenuView>

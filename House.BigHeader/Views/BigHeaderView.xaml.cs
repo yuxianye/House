@@ -12,14 +12,14 @@ using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
 
-namespace House.Header.Views
+namespace House.BigHeader.Views
 {
     /// <summary>
-    /// HeaderView.xaml 的交互逻辑
+    /// BigHeaderView.xaml 的交互逻辑
     /// </summary>
-    public partial class HeaderView
+    public partial class BigHeaderView
     {
-        public HeaderView()
+        public BigHeaderView()
         {
             InitializeComponent();
         }

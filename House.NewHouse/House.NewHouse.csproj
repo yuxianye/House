@@ -79,6 +79,14 @@
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="..\House.BigHeader\House.BigHeader.csproj">
+      <Project>{22bc0801-e782-4402-9fef-ac1a20926ce7}</Project>
+      <Name>House.BigHeader</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\House.HeaderNews\House.HeaderNews.csproj">
+      <Project>{ec72e053-64c1-4582-ad7f-4888b6b088ec}</Project>
+      <Name>House.HeaderNews</Name>
+    </ProjectReference>
     <ProjectReference Include="..\House.Utility\House.Utility.csproj">
       <Project>{ff1c850c-b7e6-4b15-b5c5-b867ef5099ba}</Project>
       <Name>House.Utility</Name>

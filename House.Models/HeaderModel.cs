@@ -5,7 +5,7 @@ using System.Text;
 
 namespace House.Models
 {
-    public class HeaderModel : Utility.MyNotifyClassBase
+    public class UserInfoModel : Utility.MyNotifyClassBase
     {
         #region Image
 
@@ -31,7 +31,7 @@ namespace House.Models
 
         #region Name
 
-        private string name="测试ing成";
+        private string name="汤老大";
 
         /// <summary>
         /// Image

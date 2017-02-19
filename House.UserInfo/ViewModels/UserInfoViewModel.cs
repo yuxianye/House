@@ -6,12 +6,12 @@ using System.Linq;
 using System.Text;
 using System.Windows.Input;
 
-namespace House.Header.ViewModels
+namespace House.UserInfo.ViewModels
 {
-    public class HeaderViewModel : ViewModelBase
+    public class UserInfoViewModel : ViewModelBase
     {
 
-        public void Header()
+        public UserInfoViewModel()
         {
             initCommand();
         }
@@ -36,13 +36,13 @@ namespace House.Header.ViewModels
         #endregion
 
 
-        #region HeaderModel
+        #region UserInfoModel
 
-        private Models.HeaderModel headerModel = new Models.HeaderModel();
-        public Models.HeaderModel HeaderModel
+        private Models.UserInfoModel userInfoModel = new Models.UserInfoModel();
+        public Models.UserInfoModel UserInfoModel
         {
-            get { return headerModel; }
-            set { Set(() => HeaderModel, ref headerModel, value); }
+            get { return userInfoModel; }
+            set { Set(() => UserInfoModel, ref userInfoModel, value); }
         }
 
         #endregion

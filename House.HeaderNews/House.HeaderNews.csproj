@@ -72,10 +72,6 @@
     </Page>
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\House.UserControls\House.UserControls.csproj">
-      <Project>{2ab1b734-002d-40a0-bb09-2b28165228b4}</Project>
-      <Name>House.UserControls</Name>
-    </ProjectReference>
     <ProjectReference Include="..\House.Utility\House.Utility.csproj">
       <Project>{ff1c850c-b7e6-4b15-b5c5-b867ef5099ba}</Project>
       <Name>House.Utility</Name>

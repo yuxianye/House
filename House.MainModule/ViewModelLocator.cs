@@ -43,7 +43,7 @@ namespace House.MainModule
             ////}
 
             SimpleIoc.Default.Register<MainModule.ViewModels.MainViewModel>();
-            SimpleIoc.Default.Register<Header.ViewModels.HeaderViewModel>();
+            SimpleIoc.Default.Register<UserInfo.ViewModels.UserInfoViewModel>();
             SimpleIoc.Default.Register<HeaderNews.ViewModels.HeaderNewsViewModel>();
             SimpleIoc.Default.Register<MainMenu.ViewModels.MainMenuViewModel>();
             SimpleIoc.Default.Register<Footer.ViewModels.FooterViewModel>();
@@ -56,11 +56,11 @@ namespace House.MainModule
                 return ServiceLocator.Current.GetInstance<MainModule.ViewModels.MainViewModel>();
             }
         }
-        public Header.ViewModels.HeaderViewModel HeaderViewModel
+        public UserInfo.ViewModels.UserInfoViewModel UserInfoViewModel
         {
             get
             {
-                return ServiceLocator.Current.GetInstance<Header.ViewModels.HeaderViewModel>();
+                return ServiceLocator.Current.GetInstance<UserInfo.ViewModels.UserInfoViewModel>();
             }
         }
 
@@ -91,7 +91,7 @@ namespace House.MainModule
         {
             // TODO Clear the ViewModels
             SimpleIoc.Default.Unregister<MainModule.ViewModels.MainViewModel>();
-            SimpleIoc.Default.Unregister<Header.ViewModels.HeaderViewModel>();
+            SimpleIoc.Default.Unregister<UserInfo.ViewModels.UserInfoViewModel>();
             SimpleIoc.Default.Unregister<HeaderNews.ViewModels.HeaderNewsViewModel>();
             SimpleIoc.Default.Unregister<MainMenu.ViewModels.MainMenuViewModel>();
             SimpleIoc.Default.Unregister<Footer.ViewModels.FooterViewModel>();

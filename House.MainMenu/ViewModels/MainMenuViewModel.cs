@@ -1,5 +1,6 @@
 ﻿using GalaSoft.MvvmLight;
 using GalaSoft.MvvmLight.Messaging;
+using House.Models;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -11,22 +12,22 @@ namespace House.MainMenu.ViewModels
     public class MainMenuViewModel : ViewModelBase
     {
 
-        public  MainMenuViewModel()
+        public MainMenuViewModel()
         {
             initCommand();
         }
 
         private void initCommand()
         {
-            NavigateUserHomeCommand = new GalaSoft.MvvmLight.Command.RelayCommand(OnExecuteNavigateUserHomeCommand);
+            UserHomeCommand = new GalaSoft.MvvmLight.Command.RelayCommand(OnExecuteUserHomeCommand);
+            NewHouseCommand = new GalaSoft.MvvmLight.Command.RelayCommand(OnExecuteNewHouseCommand);
         }
 
-        #region ConfirmCommand
+        #region NavigateUserHomeCommand
 
+        public ICommand UserHomeCommand { get; private set; }
 
-        public ICommand NavigateUserHomeCommand { get; private set; }
-
-        private void OnExecuteNavigateUserHomeCommand()
+        private void OnExecuteUserHomeCommand()
         {
 
 
@@ -35,6 +36,18 @@ namespace House.MainMenu.ViewModels
 
         #endregion
 
+        #region NewHouseCommand
+
+        public ICommand NewHouseCommand { get; private set; }
+
+        private void OnExecuteNewHouseCommand()
+        {
+            ViewInfo viewInfo = new ViewInfo(ViewName.NewHouse, ViewType.SingleWindow);
+
+            Messenger.Default.Send<ViewInfo>(viewInfo, MessengerToken.Navigate);
+        }
+
+        #endregion
 
         #region HeaderModel
 
